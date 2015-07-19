@@ -1,8 +1,8 @@
 # SQLED
 An Arduino LED class which supports fading LEDs
 
-## Usage
-###Configure the PWM pin connected to the LED###
+## Getting Started
+First, configure the PWM pin connected to the LED
 ####Syntax####
         setup(pin_identifier)
         pin_identifier: the PWM pin connected to the LED.
@@ -10,15 +10,16 @@ An Arduino LED class which supports fading LEDs
 ####Example####
         setup(13);
 
-###Fade the LED to a configurable brightness over a configurable duration###
+Now you can fade the LED to a specific brightness over a configurable duration
 ####Syntax####
         anLED.fadeToBrightness(brightness_value, time_milliseconds);
         brightness_value: A value between 0 and 255, indicating the brightness of the LED.
         time_milliseconds: The amount of time taken to fade in milliseconds.
 
 ####Example####
-Fading an led to half it's available brightness over 3 seconds.
+
         anLED.fadeToBrightness(128, 3000);
+In the example above, the LED will fade to half it's available brightness over 3 seconds.
 
 ###Example Sketch###
     #include <SQLED.h>
