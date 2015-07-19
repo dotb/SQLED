@@ -1,5 +1,5 @@
 # SQLED
-An Arduino LED class which supports fading LEDs
+You know the pulsating LED found on an Apple laptop when it's asleep? That's what this Arduino library does! SQLED is an Arduino class which allows you to gently fade LEDs.
 
 ## Getting Started
 First, configure the PWM pin connected to the LED
